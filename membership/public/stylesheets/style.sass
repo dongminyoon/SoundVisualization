@@ -1,0 +1,114 @@
+*
+  box-sizing: border-box
+
+body
+  margin: 0
+  padding: 0
+
+  font-family: sans-serif
+
+.toggle-btn
+  position: absolute
+  transition: all 400ms linear
+  left: 30px
+  top: 20px
+  &:hover
+    cursor: pointer
+  span
+    display: block
+    margin: 3px 0
+    width: 30px
+    height: 5px
+    background: rgba(230, 230, 230, 0.9)
+    border-radius: 2px
+
+.sidebar
+  position: fixed
+  overflow: scroll
+  width: 250px
+  height: 100%
+  background: #151719
+  left: -250px
+  transition: all 400ms linear
+  .menulist
+    .menu
+      width: 250px
+      text-align: center
+      color: rgba(230, 230, 230, 0.9)
+      border-bottom: 1px solid rgba(100, 100, 100, 0.3)
+      &:hover
+        .menu_item
+          background-color: whitesmoke
+          color: #151719
+          cursor: pointer
+
+      .menu_item
+        line-height: 75px
+
+      .musicList
+        overflow: scroll
+        height: 0
+        transition: all 1s ease
+
+      .backgroundList
+        overflow: hidden
+        height: 0
+        transition: all 1s ease
+
+      .depthList
+        overflow: hidden
+        height: 0
+        transition: all 1s ease
+        input
+          height: 40px
+          line-height: 40px
+          border: 1px solid rgba(100, 100, 100, 0.3)
+          &:hover
+            background: whitesmoke
+            color: #151719
+            cursor: pointer
+
+
+  .list
+    height: 32px
+    line-height: 32px
+    border: 1px solid rgba(100, 100, 100, 0.3)
+    &:hover
+      background: whitesmoke
+      color: #151719
+      cursor: pointer
+
+.click_color
+  background-color: #F5F5F5
+  color: #151719
+
+.unclick_color
+  background_color: #151719
+  color: #F5F5F5
+
+
+
+
+.button
+  position: absolute
+  display: flex
+  left: 610px
+  bottom: 60px
+  padding: 10px
+  border: 1px ridge black
+  border-radius: 10px
+  background-color: rgba(230, 230, 230, 0.9)
+  i
+    margin: 5px
+    font-size: 70px
+    color: black
+    &:hover
+      cursor: pointer
+      color: white
+
+  .playButton
+
+  .forwardButton
+
+  .rewindButton
+

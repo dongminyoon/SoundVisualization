@@ -1,0 +1,73 @@
+extends layout
+
+meta(charset="utf-8")
+meta(name="viewport" width=device - width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0)
+
+block content
+    script(src="/javascripts/p5.min.js")
+    script(src="/javascripts/addons/p5.dom.min.js")
+    script(src="/javascripts/addons/p5.sound.min.js")
+    .toggle-btn
+        span
+        span
+        span
+
+    .sidebar
+        .menulist
+            .menu
+                .menu_item#Music Music
+                .musicList
+                    .list#Music0 Way Back Home - 숀(SHAUN)
+                    .list#Music1 SoulMata(Feat. 아이유) - 지코(ZICO)
+                    .list#Music2 모든 날, 모든 순간 - 폴킴
+                    .list#Music3 너나 해(Egotistic) - 마마무
+                    .list#Music4 1도 없어 - Apink
+                    .list#Music5 여행 - 볼빨간사춘기
+                    .list#Music6 Love U - 청하
+                    .list#Music7 사랑을 했다 - IKON
+                    .list#Music8 Anpanman - 방탄소년단
+                    .list#Music9 열애중 - 벤
+                    .list#Music10 Airplane pt.2 - 방탄소년단
+                    .list#Music11 HandClap - Fitz & The Tantrums
+                    .list#Music12 Havana - Camila Cabello
+                    .list#Music13 장마 - 마마무
+                    .list#Music14 그날처럼 - 장덕철
+                    .list#Music15 넋두리 - 닐로
+                    .list#Music16 Power Up - Red Velvet
+            .menu
+                .menu_item#Background Background
+                .backgroundList
+                    .list#Rainbow Rainbow
+                    .list#Snow Snow
+                    .list#Firework Firework
+            .menu
+                .menu_item#Depth Depth
+                .depthList
+                    input#inputtag(type="range" value="5" min="1" max="10")
+
+    .button
+        .rewindButton
+            i(class="material-icons") fast_rewind
+        .playButton
+            i(class="material-icons") play_circle_outline
+        .forwardButton
+            i(class="material-icons") fast_forward
+
+    script(src="/javascripts/empty-example/sketch.js")
+    script(src="/javascripts/empty-example/rainbowFlake.js")
+    script(src="/javascripts/empty-example/snowFlake.js")
+    script(src="/javascripts/empty-example/fireworkFlake.js")
+    script(src="/javascripts/empty-example/fire.js")
+
+
+
+
+
+
+
+
+
+
+
+
+

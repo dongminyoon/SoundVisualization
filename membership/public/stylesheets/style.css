@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; }
+
+.toggle-btn {
+  position: absolute;
+  transition: all 400ms linear;
+  left: 30px;
+  top: 20px; }
+  .toggle-btn:hover {
+    cursor: pointer; }
+  .toggle-btn span {
+    display: block;
+    margin: 3px 0;
+    width: 30px;
+    height: 5px;
+    background: rgba(230, 230, 230, 0.9);
+    border-radius: 2px; }
+
+.sidebar {
+  position: fixed;
+  overflow: scroll;
+  width: 250px;
+  height: 100%;
+  background: #151719;
+  left: -250px;
+  transition: all 400ms linear; }
+  .sidebar .menulist .menu {
+    width: 250px;
+    text-align: center;
+    color: rgba(230, 230, 230, 0.9);
+    border-bottom: 1px solid rgba(100, 100, 100, 0.3); }
+    .sidebar .menulist .menu:hover .menu_item {
+      background-color: whitesmoke;
+      color: #151719;
+      cursor: pointer; }
+    .sidebar .menulist .menu .menu_item {
+      line-height: 75px; }
+    .sidebar .menulist .menu .musicList {
+      overflow: scroll;
+      height: 0;
+      transition: all 1s ease; }
+    .sidebar .menulist .menu .backgroundList {
+      overflow: hidden;
+      height: 0;
+      transition: all 1s ease; }
+    .sidebar .menulist .menu .depthList {
+      overflow: hidden;
+      height: 0;
+      transition: all 1s ease; }
+      .sidebar .menulist .menu .depthList input {
+        height: 40px;
+        line-height: 40px;
+        border: 1px solid rgba(100, 100, 100, 0.3); }
+        .sidebar .menulist .menu .depthList input:hover {
+          background: whitesmoke;
+          color: #151719;
+          cursor: pointer; }
+  .sidebar .list {
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid rgba(100, 100, 100, 0.3); }
+    .sidebar .list:hover {
+      background: whitesmoke;
+      color: #151719;
+      cursor: pointer; }
+
+.click_color {
+  background-color: #F5F5F5;
+  color: #151719; }
+
+.unclick_color {
+  background_color: #151719;
+  color: #F5F5F5; }
+
+.button {
+  position: absolute;
+  display: flex;
+  left: 610px;
+  bottom: 60px;
+  padding: 10px;
+  border: 1px ridge black;
+  border-radius: 10px;
+  background-color: rgba(230, 230, 230, 0.9); }
+  .button i {
+    margin: 5px;
+    font-size: 70px;
+    color: black; }
+    .button i:hover {
+      cursor: pointer;
+      color: white; }
+
+/*# sourceMappingURL=style.css.map */
